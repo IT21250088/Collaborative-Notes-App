@@ -57,6 +57,9 @@ Environment Variables
 Create a .env file in the backend folder.
 
 Variable	   Description
+
 PORT -	Backend server port
+
 MONGO_URI	 - MongoDB connection string
+
 JWT_SECRET - Secret used for signing JWT tokens
