@@ -1,60 +1,16 @@
-Installation
+# React + Vite
 
-Clone Repository
-cd collaborative-notes-app
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-----------------------------------------------
-Backend Setup
+Currently, two official plugins are available:
 
-Navigate to backend folder:
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-cd backend
+## React Compiler
 
-Install dependencies:
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-npm install
+## Expanding the ESLint configuration
 
-Create a .env file using .env.example.
-
-Example .env:
-
-PORT=5000
-MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/notesdb
-JWT_SECRET=your_secret_key
-
-Run backend server:
-
-npm run dev
-
-Backend runs on:
-
-http://localhost:5000
-
------------------------------------------------------
-Frontend Setup
-
-Open a new terminal and go to frontend folder:
-
-cd frontend
-
-Install dependencies:
-
-npm install
-
-Start frontend:
-
-npm run dev
-
-Frontend runs on:
-
-http://localhost:5173
-
-----------------------------------------------------------------------
-Environment Variables
-
-Create a .env file in the backend folder.
-
-Variable	Description
-PORT	Backend server port
-MONGO_URI	MongoDB connection string
-JWT_SECRET	Secret used for signing JWT tokens
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
